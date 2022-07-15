@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ECE5C7;
+}
+
+h1 {
+    font-size: 56px;
+    color: #C70A80;
+}
+
+h1 span, h2 span {
+    color: #E8AA42;
+}
+
+h2, h3 {
+    color: #14C38E;
+    padding: 2px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+footer {
+    margin-top: 250px;
+    padding: 20px;
+    color: white;
+    background-color: #354259;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a { 
+    font-size: 18px;
+    font-weight: 400;
+    padding: 4px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    padding: 20px 30px;
+    background-color: white;
+}
+
+.jumbotron {
+    padding: 60px;
+    background-color: #293462;
+    font-size: 20px;
+    color: white;
+}
+
+nav {
+    background-color: #354259;
+    padding: 5px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.author header {
+    text-align: center;
+}
+
+.article-image {
+    width: 100%;
+    object-position: center;
+    border-radius: 16px;
+}
+
+article p {
+    font-size: larger;
+}
+
+.author img {
+    border-radius: 2em;
+    min-width: 200px;
+    width: 80%;
+    max-width: 500;
+}
+
+.article-content {
+    padding-top: 30px;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.about-author:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px #14C38E, 0 0 1px white;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 1%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: inline;
+}
+
+.author-nav {
+    display: none;
+}
+
+.flex-column {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+
+.flex-row {
+    padding: 2px 4px;
+    display: flex;
+    direction: row;
+}
+
+.name {
+    font-size: large;
+    flex-basis: 25%;
+}
+
+.value {
+    margin: auto;
+    font-size: medium;
+    flex-basis: 75%;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1750px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+    .author-nav {
+        display: block;
+    }
+    .article-content {
+        padding-top: 50px;
+    }
+    .value {
+        font-size: large;
+    }
+}
+
